@@ -2,10 +2,12 @@ databases:
   - name: dpg-ch4cl1e4dad97s24n5tg-a
     databaseName: budget_database_n0ja
     user: budget_database_n0ja_user
+    plan: free
 
 services:
   - type: web
     name: dpg-ch4cl1e4dad97s24n5tg-a
+    plan: free
     env: ruby
     buildCommand: './bin/render-build.sh'
     startCommand: 'bundle exec puma -C config/puma.rb'
